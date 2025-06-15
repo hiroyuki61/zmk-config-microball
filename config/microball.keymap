@@ -57,22 +57,22 @@
         };
 
         Bra {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp LS(N8)>;
             key-positions = <6 7>;
         };
 
         Ket {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp LS(N9)>;
             key-positions = <7 8>;
         };
 
         L_bra {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <7 6 41>;
         };
 
         R_bra {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <41 7 8>;
         };
 
@@ -117,7 +117,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                 &kp T                                                                            &kp Y        &kp U  &lt 5 I    &kp O    &lt 6 P
-&kp A             &kp S         &kp D         &kp F                 &kp G        &kp LS(LG(S))                             &renzoku_kp               &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp A             &kp S         &kp D         &kp F                 &kp G        &kp LS(LG(S))                             &renzoku_kp               &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp B        &mkp LCLK                                 &kp SEMICOLON             &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 F10  &lt 4 SPACE  &mt LEFT_CONTROL LANG_ZENKAKUHANKAKU      &mt LEFT_SHIFT BACKSPACE  &lt 2 ENTER                             &kp DEL
             >;
@@ -167,10 +167,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &mkp MB4  &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
 

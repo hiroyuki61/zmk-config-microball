@@ -109,6 +109,13 @@
 
             tapping-term-ms = <150>;
         };
+
+        bracket: bracket {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BRACKET";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N8)>, <&kp LS(N9)>, <&kp LEFT_ARROW>;
+        };
     };
 
     keymap {
@@ -147,10 +154,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE  &mkp MB5   &mkp MB4   &kp LC(TAB)              &trans                       &trans  &trans          &trans          &trans           &trans
-&kp LC(A)   &mkp MB3   &mkp MB2   &mkp MB1                 &kp END  &trans      &trans  &trans  &trans          &kp UP_ARROW    &trans           &trans
-&kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans      &trans     &trans     &trans                   &trans   &trans      &trans  &trans                                                   &trans
+&kp ESCAPE  &mkp MB5   &mkp MB4   &kp LC(TAB)  &trans                       &trans  &trans          &trans          &trans           &trans
+&kp LC(A)   &mkp MB3   &mkp MB2   &mkp MB1     &kp END  &trans      &trans  &trans  &trans          &kp UP_ARROW    &trans           &trans
+&kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)    &trans   &trans      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans      &trans     &trans     &trans       &trans   &trans      &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;

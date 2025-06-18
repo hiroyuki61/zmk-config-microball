@@ -1,5 +1,5 @@
 #include "microball_L.keymap"
-#include "boards/shields/test/microball_R.overlay"
+#include "boards/shields/Test/microball_R.overlay"
 
 &trackball {
     // automouse-layer = <L_MOUSE>;

@@ -392,7 +392,7 @@
 &kp ESC           &mkp 4       &mkp 5       &kp LC(F)   &kp LC(G)                               &trans         &kp HOME         &kp UP_ARROW     &kp END           &none
 &kp LC(A)         &mkp MCLK    &mkp RCLK    &mkp LCLK   &kp LA(F5)  &trans      &trans       &kp BACKSPACE  &trans           &kp UP_ARROW     &trans   &none
 &kp LC(Z)         &kp LC(X)    &kp LC(C)    &kp LC(V)   &trans      &trans      &trans       &kp DEL        &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW   &none
-&kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LG(TAB)  &trans   &trans      &trans      &kp BACKSPACE  &DEL                                                             &kp K_MUTE
+&kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LG(TAB)  &trans   &trans      &trans      &kp BACKSPACE  &kp DEL                                                             &kp K_MUTE
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;

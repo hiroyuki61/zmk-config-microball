@@ -313,6 +313,15 @@
             bindings = <&msc>, <&msc>;
             tap-ms = <20>;
         };
+
+      // カスタムバックスペースbehavior
+  custom_bspc: &custom_bspc
+    compatible: "zmk,behavior-hold-tap"
+    #binding-cells = <2>
+    flavor = "tap-preferred"
+    tapping-term-ms = <200>
+    quick-tap-ms = <150>
+    bindings = <&kp>, <&kp>
     };
 
     keymap {
@@ -323,7 +332,7 @@
 &kp Q            &kp W            &kp E              &kp R                      &kp T                                                                                   &kp Y                 &kp U                &lt L_MOUSE I         &kp O            &lt L_FUNCTION P
 &kp A            &kp S            &kp D              &mt LEFT_CONTROL F         &kp G                            &kp LS(LG(S))               &kp COLON                  &kp H                 &kp J                &kp K                 &kp L            &lt L_MOUSE MINUS
 &mt LEFT_SHIFT Z &kp X            &kp C              &kp V                      &kp B                            &mkp LCLK                   &kp SEMICOLON              &kp N                 &kp M                &kp COMMA             &kp DOT          &lt L_MOUSE SLASH
-&mo L_FUNCTION   &kp LEFT_GUI     &kp LEFT_ALT       &lt L_JIS_NUM F10                  &lt L_MOUSE SPACE                      &kp LEFT_CONTROL            &bsands &kp BSPC &kp LSFT   &lt L_JIS_NUM ENTER                                                                       &kp PRINTSCREEN
+&mo L_FUNCTION   &kp LEFT_GUI     &kp LEFT_ALT       &lt L_JIS_NUM F10                  &lt L_MOUSE SPACE                      &kp LEFT_CONTROL            &custom_bspc   &lt L_JIS_NUM ENTER                                                                       &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&mouse_wheel_scrl SCRL_UP SCRL_DOWN>;
@@ -334,7 +343,7 @@
 &kp Q            &kp W            &kp E              &kp R                      &kp T                                                                                   &kp Y                 &kp U                &kp I                 &kp O            &lt L_FUNCTION P
 &kp A            &kp S            &kp D              &mt LEFT_CONTROL F         &kp G                            &kp LS(LG(S))               &kp COLON                  &kp H                 &kp J                &lt L_MOUSE K               &kp L            &lt L_MOUSE MINUS
 &mt LEFT_SHIFT Z &kp X            &kp C              &kp V                      &kp B                            &mkp LCLK                   &kp SEMICOLON              &kp N                 &kp M                &kp COMMA             &kp DOT          &lt L_MOUSE SLASH
-&mo L_FUNCTION   &kp LEFT_GUI     &kp LEFT_ALT       &lt L_JIS_NUM F10                  &lt L_MOUSE SPACE                      &kp LEFT_CONTROL            &bsands &kp BSPC &kp LSFT   &lt L_JIS_NUM ENTER                                                                       &kp PRINTSCREEN
+&mo L_FUNCTION   &kp LEFT_GUI     &kp LEFT_ALT       &lt L_JIS_NUM F10                  &lt L_MOUSE SPACE                      &kp LEFT_CONTROL            &custom_bspc   &lt L_JIS_NUM ENTER                                                                       &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&mouse_wheel_scrl SCRL_UP SCRL_DOWN>;

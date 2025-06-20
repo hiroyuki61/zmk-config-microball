@@ -315,31 +315,15 @@
         };
 
       // カスタムバックスペースbehavior
-    bs_repeat: bs_repeat {
-        compatible = "zmk,behavior-tap-dance";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;  // タップかホールドかの判定時間
-        bindings = <&kp BSPC>, <&bt_bs_repeat>;
-    };
-
-    bt_bs_repeat: bt_bs_repeat {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        quick-tap-ms = <150>;
-        bindings = <&kp BSPC>, <&kp BSPC>;  // タップ後ホールドでもBSPC
-        flavor = "balanced";
-    };
-
-    bs_shift_hold: bs_shift_hold {
-        compatible = "zmk,behavior-hold-tap";
-        label = "BS_AND_SHIFT";
-        #binding-cells = <0>;
-        tapping-term-ms = <400>;
-        quick-tap-ms = <200>;
-        flavor = "tap-preferred";
-        bindings = <&kp BSPC>, <&kp LS(LEFT_SHIFT)>;
-    };
+bs_shift_hold: bs_shift_hold {
+    compatible = "zmk,behavior-hold-tap";
+    label = "BS_AND_SHIFT";
+    #binding-cells = <0>;
+    tapping-term-ms = <400>;      // ここで「タップ」と「ホールド」を区別
+    quick-tap-ms = <200>;
+    flavor = "tap-preferred";     // 通常はタップ優先
+    bindings = <&kp BSPC>, <&kp LS(LEFT_SHIFT)>;
+};
     };
 
     keymap {

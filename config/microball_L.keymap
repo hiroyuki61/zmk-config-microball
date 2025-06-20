@@ -333,11 +333,12 @@
 
     bs_shift_hold: bs_shift_hold {
         compatible = "zmk,behavior-hold-tap";
+        label = "BS_AND_SHIFT";
         #binding-cells = <0>;
-        tapping-term-ms = <400>;  // Shiftと認識するのは長押し（400ms超）
-        quick-tap-ms = <150>;
-        bindings = <&bs_repeat>, <&kp LS(LEFT_SHIFT)>;
+        tapping-term-ms = <400>;
+        quick-tap-ms = <200>;
         flavor = "tap-preferred";
+        bindings = <&kp BSPC>, <&kp LS(LEFT_SHIFT)>;
     };
     };
 

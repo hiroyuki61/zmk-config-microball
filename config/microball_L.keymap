@@ -318,11 +318,11 @@
 bs_shift_hold: bs_shift_hold {
     compatible = "zmk,behavior-hold-tap";
     label = "BS_AND_SHIFT";
-    #binding-cells = <0>;
-    tapping-term-ms = <400>;      // ここで「タップ」と「ホールド」を区別
+    #binding-cells = <2>;  // 
+    tapping-term-ms = <400>;
     quick-tap-ms = <200>;
-    flavor = "tap-preferred";     // 通常はタップ優先
-    bindings = <&kp BSPC &kp LS(LEFT_SHIFT)>; // 修正済み
+    flavor = "tap-preferred";
+    bindings = <&kp BSPC>, <&kp LS(LEFT_SHIFT)>;
 };
     };
 

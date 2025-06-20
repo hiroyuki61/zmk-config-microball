@@ -322,7 +322,7 @@ bs_shift_hold: bs_shift_hold {
     tapping-term-ms = <400>;
     quick-tap-ms = <200>;
     flavor = "tap-preferred";
-    bindings = <&kp BSPC &kp LS(LEFT_SHIFT)>; 
+    bindings = <&kp BACKSPACE &kp LEFT_SHIFT>; 
 };
 
     };

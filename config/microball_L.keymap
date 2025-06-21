@@ -96,9 +96,9 @@
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
         };
 
         double_quotation {
@@ -333,7 +333,7 @@
 
         US_DEFAULT_LAYER {
             bindings = <
-&kp Q            &kp W            &kp E              &kp R                      &kp T                                                                                   &kp Y                 &kp U                &lt L_MOUSE I         &kp O            &lt L_FUNCTION P
+&kp Q            &kp W            &kp E              &kp R                      &kp T                                                                                   &kp Y                 &kp U                &lt I                 &kp O            &lt L_FUNCTION P
 &kp A            &kp S            &kp D              &mt LEFT_CONTROL F         &kp G                            &kp LS(LG(S))               &kp COLON                  &kp H                 &kp J                &kp K                 &kp L            &lt L_MOUSE MINUS
 &mt LEFT_SHIFT Z &kp X            &kp C              &kp V                      &kp B                            &mkp LCLK                   &kp SEMICOLON              &kp N                 &kp M                &kp COMMA             &kp DOT          &lt L_MOUSE SLASH
 &mo L_FUNCTION   &kp LEFT_GUI     &kp LEFT_ALT       &lt L_JIS_NUM F10          &lt L_MOUSE SPACE                &mt LEFT_CONTROL LC(SPACE)            &sands LEFT_SHIFT BACKSPACE   &lt L_JIS_NUM ENTER                                                                       &kp PRINTSCREEN
@@ -386,7 +386,7 @@
             bindings = <
 &kp F1                      &kp F2           &kp F3           &kp F4           &kp F5                                                       &kp F6        &kp F7             &kp F8          &kp F9           &kp F10
 &kp NUMBER_1      &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4     &kp NUMBER_5    &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp NUMBER_6  &kp NUMBER_7       &kp NUMBER_8    &kp NUMBER_9     &kp NUMBER_0
-&kp LC(Z)      &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp NUMBER_5    &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp NUMBER_6  &kp NUMBER_7       &kp NUMBER_8    &kp NUMBER_9     &kp NUMBER_0
+&kp LC(Z)      &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp NUMBER_5    &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp SLASH  &kp CARET       &kp kp TILDE     &kp AT_SIGN     &kp UNDERSCORE
 &trans            &trans   &trans   &trans    &trans    &trans                       &trans             &trans                                                      &kp F1
             >;
         };

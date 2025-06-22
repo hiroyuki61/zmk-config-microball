@@ -2,12 +2,12 @@
 #include "boards/shields/Test/microball_R.overlay"
 
 &trackball {
-    // automouse-layer = <L_MOUSE>;
-    scroll-layers = <L_US_SYMBOL L_JIS_SYMBOL>;
+    // automouse-layer = <7>;
+    scroll-layers = <4 6>;
     // snipe-layer = <3>;
 
     arrows {
-        layers = <L_ARROW>;
+        layers = <7>;
         bindings =
             <&kp RIGHT_ARROW>,
             <&kp LEFT_ARROW>,
